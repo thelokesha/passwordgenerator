@@ -9,7 +9,7 @@ function copy(){
     var weakchars="1234567890qwertyuiopasdfghjklzxcvbnm";
     var password='';
     for(let i=0;i<limit;i++){
-        var random = Math.floor((Math.random()*36)+1);
+        var random = Math.floor((Math.random()*35)+1);
         password +=  weakchars[random];
     }
     document.getElementById("password").innerHTML=password;
