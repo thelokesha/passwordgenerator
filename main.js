@@ -1,10 +1,14 @@
 function copy(){
   
   var limit = document.getElementById("length").value;
- 
+  if(limit === '' || limit===0 ){
+    alert("select the lenght or type of the password");
+    document.getElementById("password").style.visibility="hidden";
+    document.getElementById("result").style.visibility="hidden";
+  }
   document.getElementById("password").style.visibility="visible";
   document.getElementById("result").style.visibility="visible";
-  if(document.getElementById("weak").checked){
+  if(document.getElementById("weak").checked && limit>0){
     var password;
     var weakchars="1234567890qwertyuiopasdfghjklzxcvbnm";
     var password='';
@@ -35,7 +39,6 @@ function copy(){
     document.getElementById("password").innerHTML=password;
   }
   else{
-    alert("select a type to generate")
     document.getElementById("password").style.visibility="hidden";
   document.getElementById("result").style.visibility="hidden";
   }
