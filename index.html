@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.transparentpng.com/thumb/anonymous-mask/anonymous-mask-icon-png-25.png" alt="anonymous mask icon png @transparentpng.com ">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <p class="title">Password Generator</p>
+        <p class="title1">Select the strenght of the password</p>
+        <div class="type">
+            <label for="weak">Weak</label>
+            <input type="radio" id="weak" name="strenght">
+            <label for="medium">Medium</label>
+            <input type="radio" id="medium" name="strenght">
+            <label for="strong">Strong</label>
+            <input type="radio" id="strong" name="strenght">
+        </div>
+        <div class="length">
+             <label>Select the length</label>
+             <input type="number" min="1" max="50" id="length">
+         </div>
+        <button onclick="copy()">Generate</button>
+        <div class="result" id="result">
+            <p id="password">select type</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

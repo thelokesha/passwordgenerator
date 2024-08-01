@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    width:100vw;
+    height:90vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: beige;
+}
+.container{
+    display:flex;
+    align-items:Center;
+    justify-content: center;
+    flex-direction: column;
+    height:80%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.title{
+    font-size: 34px;
+    color:rgb(35, 35, 36);
+    font-family:'Times New Roman', Times, serif;
+}
+.title1{
+    font-size: 20px;
+    color:rgb(35, 35, 36);
+    
+}
+
+.type{
+    margin-right:3%;
+    margin-left:3%;
+    font-size:18px;
+    
+
+}
+button{
+    width:150px;
+    height:50px;
+    font-size: 28px;
+    border-radius: 10px;
+    border:1px solid black;
+    background-color: rgb(36, 35, 35);
+    font-family:sans-serif;
+    color:rgb(235, 255, 248);
+    
+}
+.length{
+    font-size:18px;
+    
+   
+}
+#length{
+    font-size:15px;
+    
+}
+button:hover{
+    font-size: 28px;
+    border-radius: 10px;
+    border:1px solid black;
+    background-color: rgb(235, 255, 248);
+    font-family:sans-serif;
+    color:black;
+   
+}
+.result{
+    width:auto;
+    height:60px;
+    border:1px solid black;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility:hidden;
+}
+#password{
+    width:100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:23px;
+    color:rgb(0, 0, 0);
+    font-family:monospace;
+    
+}
